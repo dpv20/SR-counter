@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File C:\code\oracle\buscar_sr_outlook.ps1
