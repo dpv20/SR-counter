@@ -46,7 +46,8 @@ $patternSR = '(?:SR\s*[-]?\s*)?4-(\d{10})'
 $patternSolo = '(?<![\d-])\b(\d{10})\b(?![\d-])'
 
 # --- Leer fecha desde ultimo.txt ---
-$ultimoPath = "c:\code\oracle\ultimo.txt"
+$basePath = if ($PSScriptRoot) { $PSScriptRoot } else { (Get-Location).Path }
+$ultimoPath = Join-Path $basePath "ultimo.txt"
 if (Test-Path $ultimoPath) {
     $fechaDesde = Get-Date (Get-Content $ultimoPath -First 1).Trim()
     Write-Host "Usando fecha desde ultimo.txt: $($fechaDesde.ToString('yyyy-MM-dd HH:mm:ss'))" -ForegroundColor Yellow
@@ -178,8 +179,8 @@ Write-Host " RESULTADOS" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
 Write-Host ""
 
-$csvPath = "c:\code\oracle\resultados_sr_outlook.csv"
-$oldPath = "c:\code\oracle\old.csv"
+$csvPath = Join-Path $basePath "resultados_sr_outlook.csv"
+$oldPath = Join-Path $basePath "old.csv"
 
 if (Test-Path $csvPath) {
     Copy-Item -Path $csvPath -Destination $oldPath -Force
@@ -190,7 +191,7 @@ if ($resultados.Count -eq 0) {
     Write-Host "No se encontraron SRs en el rango de fechas." -ForegroundColor Red
 } else {
     $srsTodos = @{}
-    $todosSrPath2 = "c:\code\oracle\todos_sr.csv"
+    $todosSrPath2 = Join-Path $basePath "todos_sr.csv"
     if (Test-Path $todosSrPath2) {
         Import-Csv $todosSrPath2 | ForEach-Object { $srsTodos[$_.SR] = $true }
     }
@@ -228,7 +229,7 @@ if ($resultados.Count -eq 0) {
 }
 
 # Actualizar todos_sr.csv (lista acumulada historica)
-$todosSrPath = "c:\code\oracle\todos_sr.csv"
+$todosSrPath = Join-Path $basePath "todos_sr.csv"
 $srsExistentes = @{}
 if (Test-Path $todosSrPath) {
     Import-Csv $todosSrPath | ForEach-Object { $srsExistentes[$_.SR] = $_ }
