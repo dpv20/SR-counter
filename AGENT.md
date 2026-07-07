@@ -21,7 +21,7 @@ App para detectar **SRs** (Service Requests) en los correos de Outlook y mantene
 cd "C:\Users\Diego Pavez\Desktop\Oracle\varios\SR identifier"
 ```
 
-### 2. (Opcional, multi-PC) Traer lo último desde Git
+### 2. Traer lo último desde Git
 Si trabajas desde varios computadores, sincroniza antes de buscar:
 ```powershell
 powershell -ExecutionPolicy Bypass -File ".\pull.ps1"
@@ -49,7 +49,7 @@ Al terminar imprime en consola:
 - Total de SRs únicos encontrados.
 - **SRs NUEVOS** (los que no estaban antes en `todos_sr.csv`) marcados con `** NUEVO **` en verde.
 
-### 7. (Opcional, multi-PC) Subir los cambios a Git
+### 7. Subir los cambios a Git
 Después de buscar, sube los CSV/`ultimo.txt` actualizados:
 ```powershell
 powershell -ExecutionPolicy Bypass -File ".\push.ps1"
@@ -89,3 +89,6 @@ Flujo típico para conseguir los últimos valores:
 - **PowerShell 5.1 (`EventSourceException`):** el script ya incluye el fix (`SetSwitch` de EventSource) y un fallback que verifica `Get-MgContext` aunque la conexión lance excepción.
 - **No conecta a Graph:** volver a correr el script desde tu propio PowerShell para re-autenticar (`Connect-MgGraph -Scopes "Mail.Read"`).
 - **Correos HTML:** el cuerpo se limpia de tags y se decodifica antes de buscar patrones, para no perder SRs incrustados en el HTML.
+
+
+## Responde como rejilla el SR, la fecha y el subject del mail donde venia el SR
