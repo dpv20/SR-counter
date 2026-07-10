@@ -165,6 +165,8 @@
 "SR 4-0003210459","2026-07-07","[BFMX][BFPE] Script destanqueo créditos SR 4-0003210513- SR 4-0003210459 "
 "SR 4-0003210513","2026-07-07","[BFMX][BFPE] Script destanqueo créditos SR 4-0003210513- SR 4-0003210459 "
 "SR 4-0003230708","2026-07-09","[BFCL] - GSTI-74136 - Ajuste datos clientes  -Email  -Dirección  -Teléfono en BUP OCI"
+"SR 4-0003231570","2026-07-09","BFCL/FCC || Crédito con saldo 0 en estado Activo - OP 230017922415 || SR-4-0003231570 - GSTI-74240"
+"SR 4-0003231995","2026-07-09","RV: SR: 4-0003231995 has been created."
 "SR 4-1032427585","2026-06-26","GSTI - 71852 Errores para transferencias por Canal BRE-B con errores F9 desde Flexcube."
 "SR 4-1088004851","2026-06-12","RV: RE: FLEXCUBE - BFCO - Sobreexposicion CDC - GSTI-64801"
 "SR 4-1113660989","2026-06-12","RV: RE: FLEXCUBE - BFCO - Sobreexposicion CDC - GSTI-64801"
