@@ -91,4 +91,4 @@ Flujo típico para conseguir los últimos valores:
 - **Correos HTML:** el cuerpo se limpia de tags y se decodifica antes de buscar patrones, para no perder SRs incrustados en el HTML.
 
 
-## Responde como rejilla el SR, la fecha y el subject del mail donde venia el SR
+## Responde con los SRs en un bloque de código copiable. Formato por línea: `SR 4-XXXXXXXXXX| Fecha| Asunto`. El pipe va pegado al valor anterior (sin espacio antes) para que al hacer doble-click en el número se seleccione limpio. Marca los nuevos con ** NUEVO ** al final de la línea.
