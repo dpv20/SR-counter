@@ -195,6 +195,7 @@
 "SR 4-0003378865","2026-07-28","GSTI-75678 Error ingreso Tasa PAC Colombia  4-0003378865"
 "SR 4-0003380285","2026-07-28","BFCO/FCC || Error al momento de aplicar pagos a los CDCs 201706677360 - 201706677382 || SR -4-0003380285 - GSTI-75569"
 "SR 4-0003380883","2026-07-28","Datos BUP OCI Chile - SR 4-0003380883"
+"SR 4-0003388945","2026-07-29","[BFCL] - GSTI-75748 - Ajuste datos clientes  -Email  -Dirección  -Teléfono en BUP OCI"
 "SR 4-1013670686","2026-07-27","RE: GSTI - 71852 Errores para transferencias por Canal BRE-B con errores F9 desde Flexcube."
 "SR 4-1032427585","2026-06-26","GSTI - 71852 Errores para transferencias por Canal BRE-B con errores F9 desde Flexcube."
 "SR 4-1088004851","2026-06-12","RV: RE: FLEXCUBE - BFCO - Sobreexposicion CDC - GSTI-64801"
