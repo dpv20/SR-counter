@@ -216,6 +216,8 @@
 "SR 4-0003462552","2026-08-06","SR 4-0003462552|| BFCO Pagos aplicados por FCC quedan con tipo DISTINTO de pago al que se selecciono en front FCC  "
 "SR 4-0003463289","2026-08-06","[BFCL] - GSTI-76368-- Ajuste datos clientes  -Email  -Dirección  -Teléfono en BUP OCI"
 "SR 4-0003488636","2026-08-10","RE: BFCO - Error carga CHISALCA DE-TUD-055 - 4-0003488636"
+"SR 4-0003498805","2026-08-11","Se formaliza ingreso SR 4-0003498805 BFCL || Llevar a estado Liquidado y llevar Deuda a Cero  || GSTI-76414"
+"SR 4-0003500978","2026-08-11","BFCO/FCC || Pago tanqueado TLIQ - CDC 201800217913 || SR 4-0003500978 - GSTI-76736"
 "SR 4-1013670686","2026-07-27","RE: GSTI - 71852 Errores para transferencias por Canal BRE-B con errores F9 desde Flexcube."
 "SR 4-1032427585","2026-06-26","GSTI - 71852 Errores para transferencias por Canal BRE-B con errores F9 desde Flexcube."
 "SR 4-1088004851","2026-06-12","RV: RE: FLEXCUBE - BFCO - Sobreexposicion CDC - GSTI-64801"
